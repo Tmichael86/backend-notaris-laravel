@@ -1,0 +1,59 @@
+body {
+    padding-right: 0px !important;
+}
+
+.layout-sidebar-large .sidebar-left .navigation-left .nav-item .nav-item-hold .nav-icon,
+.layout-sidebar-large .sidebar-left .navigation-left .nav-item .nav-item-hold .feather {
+    font-size: 28px;
+}
+
+.layout-sidebar-large .main-header .header-part-right .user img {
+    object-fit: cover;
+}
+
+.layout-sidebar-large .main-header .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.on-hover {
+    cursor: pointer;
+}
+
+/* Table */
+table .btn {
+    min-width: 35px;
+    margin: 2px 3px;
+}
+
+.table-responsive .dataTables_wrapper .row .col-sm-12 {
+    overflow-x: auto !important;
+}
+
+.card:not(.card-chart-bottom)>.card-title {
+    padding: 1rem;
+    background-color: #e5e5e5;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0px;
+}
+
+.form-control-plaintext:focus-visible,
+.form-control-plaintext:focus-visible:read-only {
+    outline: none;
+}
+
+.form-control-plaintext:read-only {
+    cursor: default;
+    font-weight: 600;
+    padding: 0px;
+    font-size: 14px;
+}
+
+textarea.form-control-plaintext:read-only {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+}
+
+input[type="file"].form-control {
+    padding: 3px;
+}

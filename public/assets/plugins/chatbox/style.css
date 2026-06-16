@@ -1,0 +1,83 @@
+@keyframes chat-wrapper-open {
+	0% {
+		transform: scale(0.0);
+	}
+
+	100% {
+		transform: scale(1.0);
+	}
+}
+
+.chat-wrapper {
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
+	z-index: 10;
+}
+
+.chat-wrapper[window="close"] .chat-window {
+	display: none;
+}
+
+.chat-wrapper[window="open"] .chat-window {
+	display: block !important;
+	width: 14rem;
+	height: 18rem;
+	background-color: #FFF;
+	box-shadow: 0px 0px 6px 3px #9d9d9d;
+	border-radius: 1rem;
+	animation-name: chat-wrapper-open;
+	animation-duration: .25s;
+}
+
+.chat-wrapper .chat-window > .chat-close {
+	width: 100%;
+	text-align: right;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+	cursor: pointer;
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
+.chat-wrapper .chat-window > .chat-box {
+	padding: 5px 5px;
+}
+
+.chat-wrapper .chat-window > .chat-box > textarea {
+	height: 100%;
+}
+
+.chat-wrapper .chat-window > .chat-send {
+	padding: 0px 5px;
+}
+
+.chat-wrapper > .chat-open {
+	display: block;
+	width: 3.75rem;
+	height: 3.75rem;
+	background-color: #663399;
+	border-radius: 50%;
+	box-shadow: 0px 0px 6px 3px #9d9d9d;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chat-wrapper[window="open"] > .chat-open {
+	display: none !important;
+}
+
+.chat-wrapper > .chat-open:checked {
+	background-color: #FFF;
+}
+
+.chat-wrapper > .chat-open:hover {
+	background-color: #33194D;
+}
+
+.chat-wrapper > .chat-open > i {
+	font-size: 1.75rem;
+	color: white;
+}

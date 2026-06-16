@@ -1,0 +1,27 @@
+.auto-complete-wrapper {
+	position: absolute;
+	top: 10;
+    width: 100%;
+    z-index: 10;
+    max-height: 130px;
+    overflow-y: auto;
+	border: solid 1px #F1F2F4;
+	margin-top: 5px;
+	border-radius: 0.25rem;
+}
+
+.auto-complete-wrapper ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.auto-complete-wrapper li {
+	padding: 0.35rem 1.25rem;
+	cursor: pointer;
+	background-color: white;
+	border-bottom: solid 1px #F1F2F4;
+}
+
+.auto-complete-wrapper li:hover {
+	background-color: #F1F2F4;
+}

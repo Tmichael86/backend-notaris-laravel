@@ -1,0 +1,14 @@
+.select2,
+.select2-results {
+  font-family: "Font Awesome 5 Free", "Nunito";
+}
+
+.foto-profile {
+  width: 100%;
+  height: 152px;
+  object-fit: contain;
+}
+
+.foto-profile-card {
+  cursor: pointer;
+}
